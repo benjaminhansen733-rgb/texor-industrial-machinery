@@ -133,7 +133,7 @@
 
   /* Industrial Button Styles */
   .btn-industrial {
-    @apply bg-gradient-to-r from-primary to-primary-hover text-primary-foreground;
+    @apply bg-primary text-primary-foreground;
     @apply shadow-[var(--shadow-industrial)] transition-all duration-300;
     @apply hover:shadow-[var(--shadow-elevated)] hover:scale-105;
   }
