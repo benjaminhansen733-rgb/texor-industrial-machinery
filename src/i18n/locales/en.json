@@ -1,43 +1,79 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About Us", 
     "products": "Products",
     "contact": "Contact"
   },
   "hero": {
     "title": "TEXOR",
-    "subtitle": "Precise Winding, Unmatched Quality",
-    "description": "Manufacturer of specialized textile machinery, industrial bobbin winders and lacquer traversing equipment with the highest quality and engineering precision",
+    "subtitle": "Precise Winding, Exceptional Quality",
+    "description": "Behsa Faraz Kavir Engineering Company under TEXOR brand, designer and manufacturer of spinning and machine carpet industry machinery",
     "consultation": "Request Consultation",
     "catalog": "Download Catalog",
     "whatsapp": "WhatsApp Contact"
   },
   "about": {
     "title": "About Texor",
-    "subtitle": "Specialized Industrial Machinery Brand",
-    "description": "Texor, a subsidiary of Behsa Faraz Kavir Engineering Company, focuses on designing and manufacturing specialized textile machinery, producing products with high precision and quality.",
+    "subtitle": "Behsa Faraz Kavir Engineering Company",
+    "description": "Behsa Faraz Kavir Engineering Company under TEXOR brand has started its activity with the aim of designing and manufacturing parts and machinery for the spinning and machine carpet industry.",
+    "mission": "Our Mission",
+    "missionText": "To produce world-class quality machines with high engineering precision and competitiveness in domestic and international markets",
     "features": {
       "precision": "Engineering Precision",
       "quality": "High Quality",
-      "export": "Export-Oriented",
+      "export": "Export-Oriented", 
       "innovation": "Innovation"
     }
   },
   "products": {
     "title": "Texor Products",
-    "subtitle": "Specialized Textile Machinery",
-    "bobbinWinder": {
-      "title": "Industrial Bobbin Winder",
-      "description": "High-precision bobbin winding machines with variable speed control capability",
-      "features": "Features: Precise tension control, variable speed, modern design"
+    "subtitle": "Specialized Machinery for Spinning and Machine Carpet Industry",
+    "windingMachine": {
+      "title": "Traversing Thread Winder",
+      "description": "Thread winding machine with advanced traversing system and precise control",
+      "features": "Individual speed adjustment, thread break sensor, weight and length display"
     },
-    "lacquerer": {
-      "title": "Lacquer Traversing Machine",
-      "description": "Advanced lacquering systems with uniform traversing motion",
-      "features": "Features: Uniform motion, thickness control, high efficiency"
+    "bobbinWinder": {
+      "title": "Traversing Bobbin Winder",
+      "description": "Industrial bobbin winder with traversing technology for complete thread uniformity",
+      "features": "Separate drives, operator efficiency control, shift work recording"
+    },
+    "lacquerMachine": {
+      "title": "Traversing Lacquer Machine",
+      "description": "Lacquering system with traversing motion for uniform coating",
+      "features": "Thickness control, uniform motion, high efficiency"
+    },
+    "specifications": {
+      "title": "Technical Specifications",
+      "capacity": "Machine Capacity",
+      "capacityDesc": "Number of designable heads: minimum 5, maximum unlimited (according to customer order)",
+      "controlSystem": "Advanced Control System",
+      "controlFeatures": [
+        "Thread weight display for each head",
+        "Individual speed and length setting for each head or group of heads",
+        "Real-time production length display and shift production recording",
+        "Definition of 4 work shifts (A, B, C, D) with operator efficiency calculation"
+      ],
+      "safety": "Thread Burning Prevention System",
+      "safetyDesc": "Thread break sensor and automatic stop for machine safety",
+      "independence": "Independent Operation of Each Head",
+      "independenceDesc": "Failure of one head does not stop the entire machine",
+      "efficiency": "Separate Drives and Optimal Energy Consumption",
+      "efficiencyDesc": "Separate drive for each motor for better adjustment and reduced energy consumption",
+      "quality": "Wound Thread Quality Stability",
+      "qualityDesc": "Complete uniformity in wound thread output",
+      "productivity": "Increased Production Efficiency",
+      "productivityDesc": "Using advanced traversing system to increase production speed",
+      "traverse": "Traversing Features",
+      "traverseDesc": "Solving problems of old machines with drum grooves and reducing thread breakage",
+      "materials": "Parts Material and Manufacturing Quality",
+      "materialsDesc": "Using special ceramics in thread path, anti-friction rollers, steel and aluminum alloy",
+      "compatibility": "Compatibility with Various Threads",
+      "compatibilityDesc": "Support for different thread numbers (single-ply, multi-ply, thick, thin)"
     },
     "requestQuote": "Request Quote",
+    "moreDetails": "More Details",
     "consultation": "Free Consultation"
   },
   "contact": {
@@ -45,15 +81,20 @@
     "subtitle": "Get in touch with us for consultation and more information",
     "phone": "Phone",
     "website": "Website",
-    "instagram": "Instagram",
+    "instagram": "Instagram", 
     "whatsapp": "WhatsApp",
+    "address": "Address",
+    "addressText": "Iran, Yazd",
+    "workingHours": "Working Hours",
+    "workingHoursText": "Saturday to Thursday: 8:00 AM to 5:00 PM",
     "form": {
       "name": "Full Name",
       "email": "Email",
       "phone": "Phone Number",
       "subject": "Subject",
       "message": "Your Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "note": "Your message will be sent via WhatsApp"
     }
   },
   "footer": {
