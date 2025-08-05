@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "TEXOR",
+    "subtitle": "Precise Winding, Unmatched Quality",
+    "description": "Manufacturer of specialized textile machinery, industrial bobbin winders and lacquer traversing equipment with the highest quality and engineering precision",
+    "consultation": "Request Consultation",
+    "catalog": "Download Catalog",
+    "whatsapp": "WhatsApp Contact"
+  },
+  "about": {
+    "title": "About Texor",
+    "subtitle": "Specialized Industrial Machinery Brand",
+    "description": "Texor, a subsidiary of Behsa Faraz Kavir Engineering Company, focuses on designing and manufacturing specialized textile machinery, producing products with high precision and quality.",
+    "features": {
+      "precision": "Engineering Precision",
+      "quality": "High Quality",
+      "export": "Export-Oriented",
+      "innovation": "Innovation"
+    }
+  },
+  "products": {
+    "title": "Texor Products",
+    "subtitle": "Specialized Textile Machinery",
+    "bobbinWinder": {
+      "title": "Industrial Bobbin Winder",
+      "description": "High-precision bobbin winding machines with variable speed control capability",
+      "features": "Features: Precise tension control, variable speed, modern design"
+    },
+    "lacquerer": {
+      "title": "Lacquer Traversing Machine",
+      "description": "Advanced lacquering systems with uniform traversing motion",
+      "features": "Features: Uniform motion, thickness control, high efficiency"
+    },
+    "requestQuote": "Request Quote",
+    "consultation": "Free Consultation"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for consultation and more information",
+    "phone": "Phone",
+    "website": "Website",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "company": "Behsa Faraz Kavir Engineering Company",
+    "brand": "Texor Brand - Specialized Textile Machinery",
+    "rights": "All rights reserved"
+  }
+}

@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Industrial Design System for TEXOR - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light Industrial Theme */
+    --background: 0 0% 98%;
+    --foreground: 220 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Industrial Blue Primary */
+    --primary: 210 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 85% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Light Gray Secondary */
+    --secondary: 220 10% 95%;
+    --secondary-foreground: 220 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Industrial */
+    --muted: 220 8% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Steel Blue Accent */
+    --accent: 200 25% 88%;
+    --accent-foreground: 220 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 12% 88%;
+    --input: 220 12% 88%;
+    --ring: 210 85% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
+
+    /* Industrial Gradients */
+    --gradient-industrial: linear-gradient(135deg, hsl(210 85% 45%), hsl(200 60% 55%));
+    --gradient-steel: linear-gradient(180deg, hsl(220 8% 98%), hsl(220 12% 88%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 85% 45% / 0.95), hsl(220 15% 25% / 0.95));
+
+    /* Industrial Shadows */
+    --shadow-industrial: 0 4px 20px hsl(210 85% 45% / 0.1);
+    --shadow-card: 0 2px 10px hsl(220 15% 25% / 0.08);
+    --shadow-elevated: 0 8px 30px hsl(220 15% 25% / 0.12);
 
     --sidebar-background: 0 0% 98%;
 
@@ -94,12 +108,55 @@ All colors MUST be HSL.
   }
 }
 
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Industrial Typography */
+  .industrial-heading {
+    @apply text-foreground font-bold tracking-tight;
+  }
+
+  .industrial-text {
+    @apply text-muted-foreground leading-relaxed;
+  }
+
+  /* Industrial Button Styles */
+  .btn-industrial {
+    @apply bg-gradient-to-r from-primary to-primary-hover text-primary-foreground;
+    @apply shadow-[var(--shadow-industrial)] transition-all duration-300;
+    @apply hover:shadow-[var(--shadow-elevated)] hover:scale-105;
+  }
+
+  /* Industrial Card */
+  .card-industrial {
+    @apply bg-card border border-border rounded-lg;
+    @apply shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)];
+    @apply transition-all duration-300;
+  }
+
+  /* Gradient Backgrounds */
+  .bg-gradient-industrial {
+    background: var(--gradient-industrial);
+  }
+
+  .bg-gradient-steel {
+    background: var(--gradient-steel);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
   }
 }
