@@ -34,8 +34,8 @@ export const Contact = () => {
     {
       icon: Instagram,
       label: t('contact.instagram'),
-      value: '@texor_co',
-      link: 'https://instagram.com/texor_co'
+      value: '@texorco',
+      link: 'https://instagram.com/texorco'
     },
     {
       icon: MessageCircle,
