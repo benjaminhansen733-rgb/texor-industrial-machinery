@@ -8,7 +8,7 @@ import { Phone, Globe, Instagram, MessageCircle, Mail, Send, MapPin } from "luci
 import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -56,23 +56,24 @@ export const Contact = () => {
     e.preventDefault();
     
     // Create WhatsApp message
+    const header = t('contact.whatsappHeader');
     const message = `
-سلام، پیام جدید از وب‌سایت تکسور:
+${header}
 
-نام: ${formData.name}
-ایمیل: ${formData.email}
-تلفن: ${formData.phone}
-موضوع: ${formData.subject}
+${t('contact.form.name')}: ${formData.name}
+${t('contact.form.email')}: ${formData.email}
+${t('contact.form.phone')}: ${formData.phone}
+${t('contact.form.subject')}: ${formData.subject}
 
-پیام:
+${t('contact.form.message')}:
 ${formData.message}
     `.trim();
 
     window.open(`https://wa.me/+989133629006?text=${encodeURIComponent(message)}`, '_blank');
     
     toast({
-      title: "پیام ارسال شد",
-      description: "پیام شما از طریق واتساپ ارسال شد. به زودی با شما تماس خواهیم گرفت.",
+      title: t('contact.toast.sentTitle'),
+      description: t('contact.toast.sentDesc'),
     });
 
     // Reset form
@@ -102,7 +103,7 @@ ${formData.message}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-6 industrial-heading">
-                اطلاعات تماس
+                {t('contact.infoTitle')}
               </h3>
               <div className="space-y-4">
                 {contactInfo.map((item, index) => {
@@ -136,15 +137,15 @@ ${formData.message}
             {/* Company Info */}
             <Card className="card-industrial p-6">
               <h4 className="text-xl font-bold mb-4 industrial-heading">
-                آدرس شرکت
+                {t('contact.address')}
               </h4>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="industrial-text">
-                  <p className="font-medium mb-2">شرکت مهندسی بهسا فراز کویر</p>
-                  <p>برند تکسور - ماشین‌آلات تخصصی نساجی</p>
+                  <p className="font-medium mb-2">{t('footer.company')}</p>
+                  <p>{t('footer.brand')}</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    ساعات کاری: شنبه تا چهارشنبه ۸:۰۰ تا ۱۷:۰۰
+                    {t('contact.workingHours')}: {t('contact.workingHoursText')}
                   </p>
                 </div>
               </div>
@@ -154,7 +155,7 @@ ${formData.message}
           {/* Contact Form */}
           <Card className="card-industrial p-6">
             <h3 className="text-2xl font-bold mb-6 industrial-heading">
-              فرم تماس
+              {t('contact.formTitle')}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -235,7 +236,7 @@ ${formData.message}
               </Button>
 
               <p className="text-sm text-muted-foreground text-center">
-                با کلیک بر روی ارسال، پیام شما از طریق واتساپ ارسال خواهد شد
+                {t('contact.form.note')}
               </p>
             </form>
           </Card>

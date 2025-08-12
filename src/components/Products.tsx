@@ -18,12 +18,19 @@ export const Products = () => {
       description: t('products.bobbinWinder.description'),
       features: t('products.bobbinWinder.features'),
       image: bobbinImage,
-      specs: [
-        'سرعت: 1000-6000 دور در دقیقه',
-        'کنترل تنش: دیجیتال',
-        'مواد قابل پیچش: همه انواع نخ',
-        'دقت پیچش: ±0.1%'
-      ]
+      specs: currentLanguage === 'fa'
+        ? [
+          'سرعت: 1000-6000 دور در دقیقه',
+          'کنترل تنش: دیجیتال',
+          'مواد قابل پیچش: همه انواع نخ',
+          'دقت پیچش: ±0.1%'
+        ]
+        : [
+          'Speed: 1000-6000 RPM',
+          'Tension control: Digital',
+          'Material: All yarn types',
+          'Winding accuracy: ±0.1%'
+        ]
     },
     {
       id: 'lacquer',
@@ -31,12 +38,19 @@ export const Products = () => {
       description: t('products.lacquerer.description'),
       features: t('products.lacquerer.features'),
       image: lacquerImage,
-      specs: [
-        'عرض کاری: 200-2000 میلی‌متر',
-        'ضخامت لاکنی: 0.1-5 میلی‌متر',
-        'سرعت تراورس: قابل تنظیم',
-        'کنترل: PLC'
-      ]
+      specs: currentLanguage === 'fa'
+        ? [
+          'عرض کاری: 200-2000 میلی‌متر',
+          'ضخامت لاکنی: 0.1-5 میلی‌متر',
+          'سرعت تراورس: قابل تنظیم',
+          'کنترل: PLC'
+        ]
+        : [
+          'Working width: 200-2000 mm',
+          'Coating thickness: 0.1-5 mm',
+          'Traverse speed: Adjustable',
+          'Control: PLC'
+        ]
     }
   ];
   
@@ -98,7 +112,9 @@ export const Products = () => {
   );
 
   const handleWhatsApp = (productTitle: string) => {
-    const message = `سلام، جهت کسب اطلاعات بیشتر در مورد ${productTitle} با شما تماس گرفتم.`;
+    const message = currentLanguage === 'fa'
+      ? `سلام، جهت کسب اطلاعات بیشتر در مورد ${productTitle} با شما تماس گرفتم.`
+      : `Hello, I would like more information about ${productTitle}.`;
     window.open(`https://wa.me/+989133629006?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -169,7 +185,7 @@ export const Products = () => {
                         onClick={() => setSelectedProduct(product.id)}
                       >
                         <FileText className="h-4 w-4 mr-2" />
-                        جزئیات بیشتر
+                        {t('products.moreDetails')}
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="max-w-2xl">
@@ -186,7 +202,7 @@ export const Products = () => {
                         />
                         <div>
                           <h4 className="text-lg font-semibold mb-3 industrial-heading">
-                            مشخصات فنی:
+                          {t('products.specifications.title')}
                           </h4>
                           <div className="space-y-2">
                             {product.specs.map((spec, index) => (
@@ -208,7 +224,7 @@ export const Products = () => {
                             className="btn-industrial flex-1"
                           >
                             <MessageCircle className="h-4 w-4 mr-2" />
-                            درخواست قیمت
+                            {t('products.requestQuote')}
                           </Button>
                           <Button
                             onClick={handleConsultation}
@@ -216,7 +232,7 @@ export const Products = () => {
                             className="flex-1"
                           >
                             <Zap className="h-4 w-4 mr-2" />
-                            مشاوره رایگان
+                            {t('products.consultation')}
                           </Button>
                         </div>
                       </div>
@@ -231,10 +247,10 @@ export const Products = () => {
         {/* Call to Action */}
         <div className="text-center bg-gradient-industrial rounded-2xl p-8 md:p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
-            نیاز به مشاوره تخصصی دارید؟
+            {t('products.cta.title')}
           </h3>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            تیم متخصص ما آماده ارائه راهکارهای بهینه برای نیازهای خاص شما می‌باشد
+            {t('products.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -247,7 +263,7 @@ export const Products = () => {
               {t('products.consultation')}
             </Button>
             <Button
-              onClick={() => handleWhatsApp('مشاوره عمومی')}
+              onClick={() => handleWhatsApp(currentLanguage === 'fa' ? 'مشاوره عمومی' : 'General consultation')}
               variant="outline"
               size="lg"
               className="bg-green-600 border-green-500 text-white hover:bg-green-700"

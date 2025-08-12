@@ -9,22 +9,22 @@ export const About = () => {
     {
       icon: Cog,
       key: 'precision',
-      description: 'طراحی مهندسی دقیق با استفاده از تکنولوژی‌های روز دنیا'
+      description: ''
     },
     {
       icon: Award,
       key: 'quality',
-      description: 'کنترل کیفیت سخت‌گیرانه در تمام مراحل تولید'
+      description: ''
     },
     {
       icon: Globe,
       key: 'export',
-      description: 'صادرات محصولات به کشورهای مختلف'
+      description: ''
     },
     {
       icon: Lightbulb,
       key: 'innovation',
-      description: 'نوآوری مستمر در طراحی و تولید'
+      description: ''
     }
   ];
 
@@ -55,7 +55,7 @@ export const About = () => {
                   {t(`about.features.${feature.key}`)}
                 </h3>
                 <p className="industrial-text">
-                  {feature.description}
+                  {t(`about.featuresDescriptions.${feature.key}`)}
                 </p>
               </Card>
             );
@@ -66,29 +66,26 @@ export const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-6 industrial-heading">
-                شرکت مهندسی بهسا فراز کویر
+                {t('footer.company')}
               </h3>
               <p className="text-lg industrial-text leading-relaxed mb-6">
-                بیش از یک دهه تجربه در زمینه طراحی و ساخت تجهیزات صنعتی، ما را به یکی از پیشگامان 
-                صنعت ماشین‌سازی تبدیل کرده است. تکسور به عنوان برند تخصصی ما، نماد کیفیت و دقت 
-                در تولید ماشین‌آلات نساجی محسوب می‌شود.
+                {t('about.companyText')}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-gradient-steel rounded-lg">
                   <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                  <div className="text-sm industrial-text">سال تجربه</div>
+                  <div className="text-sm industrial-text">{t('about.yearsExperience')}</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-steel rounded-lg">
                   <div className="text-3xl font-bold text-primary mb-2">100+</div>
-                  <div className="text-sm industrial-text">پروژه موفق</div>
+                  <div className="text-sm industrial-text">{t('about.successfulProjects')}</div>
                 </div>
               </div>
             </div>
             <div className="bg-gradient-industrial rounded-xl p-8 text-white">
-              <h4 className="text-2xl font-bold mb-4">ماموریت ما</h4>
+              <h4 className="text-2xl font-bold mb-4">{t('about.mission')}</h4>
               <p className="text-lg leading-relaxed">
-                ارائه راه‌حل‌های نوآورانه و با کیفیت در صنعت نساجی، با هدف بهبود 
-                راندمان تولید و کاهش هزینه‌های عملیاتی مشتریان.
+                {t('about.missionText')}
               </p>
             </div>
           </div>
