@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right">
           <div>
             <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
-              تکسور | TEXOR
+              {t('footer.title')}
             </h3>
             <p className="text-background/80 mb-4">
               {t('footer.company')}
@@ -21,7 +21,7 @@ export const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-primary-foreground">تماس سریع</h4>
+            <h4 className="font-semibold mb-4 text-primary-foreground">{t('footer.quickContact')}</h4>
             <div className="space-y-2">
               <a href="tel:+989133629006" className="flex items-center gap-2 text-background/80 hover:text-primary-foreground">
                 <Phone className="h-4 w-4" />
@@ -29,13 +29,13 @@ export const Footer = () => {
               </a>
               <a href="https://wa.me/+989133629006" className="flex items-center gap-2 text-background/80 hover:text-primary-foreground">
                 <MessageCircle className="h-4 w-4" />
-                واتساپ
+                {t('footer.whatsapp')}
               </a>
             </div>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-primary-foreground">شبکه‌های اجتماعی</h4>
+            <h4 className="font-semibold mb-4 text-primary-foreground">{t('footer.socialMedia')}</h4>
             <div className="flex gap-4 justify-center md:justify-start">
               <a href="https://instagram.com/texorco" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-primary-foreground transition-colors duration-200">
                 <Instagram className="h-6 w-6" />
@@ -66,7 +66,7 @@ export const Footer = () => {
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60">
-            © 2024 {t('footer.rights')} - تکسور
+            © 2024 {t('footer.rights')} - {t('footer.title')}
           </p>
         </div>
       </div>

@@ -98,8 +98,12 @@
     }
   },
   "footer": {
+    "title": "TEXOR",
     "company": "Behsa Faraz Kavir Engineering Company",
     "brand": "Texor Brand - Specialized Textile Machinery",
+    "quickContact": "Quick Contact",
+    "whatsapp": "WhatsApp",
+    "socialMedia": "Social Media",
     "rights": "All rights reserved"
   }
 }
