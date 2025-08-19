@@ -19,7 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Inter', 'Vazirmatn', 'system-ui', 'sans-serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'persian': ['Vazirmatn', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+				'english': ['Inter', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
 				'vazir': ['Vazirmatn', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
 			},

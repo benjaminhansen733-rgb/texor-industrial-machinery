@@ -17,6 +17,9 @@
     "title": "About Texor",
     "subtitle": "Behsa Faraz Kavir Engineering Company",
     "description": "Behsa Faraz Kavir Engineering Company under TEXOR brand has started its activity with the aim of designing and manufacturing parts and machinery for the spinning and machine carpet industry.",
+    "companyText": "Behsa Faraz Kavir Engineering Company under TEXOR brand has started its activity with the aim of designing and manufacturing parts and machinery for the spinning and machine carpet industry. We are committed to producing world-class quality machines with high engineering precision.",
+    "yearsExperience": "Years Experience",
+    "successfulProjects": "Successful Projects",
     "mission": "Our Mission",
     "missionText": "To produce world-class quality machines with high engineering precision and competitiveness in domestic and international markets",
     "features": {
@@ -24,6 +27,12 @@
       "quality": "High Quality",
       "export": "Export-Oriented", 
       "innovation": "Innovation"
+    },
+    "featuresDescriptions": {
+      "precision": "Design and manufacturing with the highest engineering precision using world-class technologies",
+      "quality": "Production of world-class quality products meeting international standards",
+      "export": "Focus on producing products suitable for export and competition in global markets",
+      "innovation": "Using the latest technologies and innovative methods in design and manufacturing"
     }
   },
   "products": {

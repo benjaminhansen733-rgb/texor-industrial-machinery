@@ -7,21 +7,23 @@ export const useLanguage = () => {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     
-    // Update HTML attributes for RTL/LTR
+    // Update HTML attributes for RTL/LTR and fonts
     const html = document.documentElement;
     if (lng === 'fa') {
       html.setAttribute('lang', 'fa');
       html.setAttribute('dir', 'rtl');
-      html.style.fontFamily = 'Vazirmatn, sans-serif';
+      html.style.fontFamily = '"Vazirmatn", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif';
+      document.body.style.fontFamily = '"Vazirmatn", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif';
     } else {
       html.setAttribute('lang', 'en');
       html.setAttribute('dir', 'ltr');
-      html.style.fontFamily = 'Inter, sans-serif';
+      html.style.fontFamily = '"Inter", "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif';
+      document.body.style.fontFamily = '"Inter", "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif';
     }
   };
 
   useEffect(() => {
-    // Set initial direction based on current language
+    // Set initial direction and font based on current language
     changeLanguage(i18n.language);
   }, [i18n.language]);
 
