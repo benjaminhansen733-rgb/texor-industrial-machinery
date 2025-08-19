@@ -88,6 +88,8 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with us for consultation and more information",
+    "infoTitle": "Contact Information",
+    "formTitle": "Send us a Message",
     "phone": "Phone",
     "website": "Website",
     "instagram": "Instagram", 
@@ -96,6 +98,7 @@
     "addressText": "Iran, Yazd",
     "workingHours": "Working Hours",
     "workingHoursText": "Saturday to Thursday: 8:00 AM to 5:00 PM",
+    "whatsappHeader": "New inquiry from TEXOR website:",
     "form": {
       "name": "Full Name",
       "email": "Email",
@@ -104,7 +107,25 @@
       "message": "Your Message",
       "send": "Send Message",
       "note": "Your message will be sent via WhatsApp"
+    },
+    "toast": {
+      "sentTitle": "Message Sent Successfully",
+      "sentDesc": "Your message has been forwarded to WhatsApp"
     }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by leading textile manufacturers across Iran and beyond",
+    "content1": "TEXOR's bobbin winding machines have revolutionized our production efficiency. The precision and reliability are outstanding, and their after-sales support is exceptional.",
+    "content2": "We've been using TEXOR's traversing lacquer machines for over 3 years. The uniform coating quality and reduced maintenance costs have significantly improved our operations.",
+    "content3": "The traversing bobbin winder from TEXOR has eliminated thread breakage issues we faced with older machines. Highly recommended for any textile manufacturer.",
+    "yearsExperience": "Years of Experience",
+    "satisfiedCustomers": "Satisfied Customers", 
+    "machinesDelivered": "Machines Delivered",
+    "customerSatisfaction": "Customer Satisfaction"
+  },
+  "search": {
+    "placeholder": "Search products and services..."
   },
   "footer": {
     "title": "TEXOR",

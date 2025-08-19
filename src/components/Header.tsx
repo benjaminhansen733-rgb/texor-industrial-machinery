@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/useLanguage";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { SearchBar } from "./SearchBar";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
 interface HeaderProps {
@@ -59,6 +60,7 @@ export const Header = ({ currentSection, onNavigate }: HeaderProps) => {
 
           {/* Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            <SearchBar />
             <Button
               variant="outline"
               size="sm"

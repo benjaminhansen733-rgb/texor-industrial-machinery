@@ -119,11 +119,11 @@ ${formData.message}
                         <div className="w-12 h-12 bg-gradient-industrial rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
                           <Icon className="h-6 w-6 text-white" />
                         </div>
-                        <div>
+                        <div className="flex-1">
                           <div className="font-medium industrial-heading">
                             {item.label}
                           </div>
-                          <div className="text-primary font-mono">
+                          <div className="text-primary font-mono break-all">
                             {item.value}
                           </div>
                         </div>
@@ -168,7 +168,8 @@ ${formData.message}
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="border-border focus:ring-primary"
+                    className="border-border focus:ring-primary w-full"
+                    placeholder={t('contact.form.name')}
                   />
                 </div>
                 <div>
@@ -181,7 +182,8 @@ ${formData.message}
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="border-border focus:ring-primary"
+                    className="border-border focus:ring-primary w-full"
+                    placeholder="+98 913 362 9006"
                   />
                 </div>
               </div>
@@ -195,7 +197,8 @@ ${formData.message}
                   type="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="border-border focus:ring-primary"
+                  className="border-border focus:ring-primary w-full"
+                  placeholder="info@example.com"
                 />
               </div>
 
@@ -208,7 +211,8 @@ ${formData.message}
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="border-border focus:ring-primary"
+                  className="border-border focus:ring-primary w-full"
+                  placeholder={t('contact.form.subject')}
                 />
               </div>
 
@@ -222,13 +226,14 @@ ${formData.message}
                   onChange={handleInputChange}
                   required
                   rows={4}
-                  className="border-border focus:ring-primary"
+                  className="border-border focus:ring-primary w-full resize-none"
+                  placeholder={t('contact.form.message')}
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full btn-industrial text-lg"
+                className="w-full btn-industrial text-lg py-3"
                 size="lg"
               >
                 <Send className="h-5 w-5 mr-2" />
