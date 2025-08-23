@@ -6,6 +6,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { MessageCircle, FileText, Settings, Zap, ShieldCheck } from "lucide-react";
 import bobbinImage from "@/assets/bobbin-winder.jpg";
 import lacquerImage from "@/assets/lacquer-machine.jpg";
+import catalogImage from "@/assets/catalog-image.jpg";
 
 export const Products = () => {
   const { t, currentLanguage } = useLanguage();
@@ -242,6 +243,22 @@ export const Products = () => {
               </div>
             </Card>
           ))}
+        </div>
+
+        {/* Catalog Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold mb-4 industrial-heading">
+              {currentLanguage === 'fa' ? 'کاتالوگ محصولات' : 'Product Catalog'}
+            </h3>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src={catalogImage}
+              alt={currentLanguage === 'fa' ? 'کاتالوگ محصولات' : 'Product Catalog'}
+              className="max-w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
         </div>
 
         {/* Call to Action */}
