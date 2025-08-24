@@ -18,6 +18,7 @@ export const Header = ({ currentSection, onNavigate }: HeaderProps) => {
     { key: 'home', href: '#home' },
     { key: 'about', href: '#about' },
     { key: 'products', href: '#products' },
+    { key: 'resources', href: '#resources' },
     { key: 'contact', href: '#contact' }
   ];
 

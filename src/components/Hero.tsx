@@ -21,7 +21,7 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image with Enhanced Overlay */}
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -32,29 +32,52 @@ export const Hero = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-hero"></div>
+        {/* Premium overlay pattern */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary/10"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <div className="max-w-5xl mx-auto animate-fade-in">
+          {/* Brand Badge */}
+          <div className="inline-flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-full mb-6 backdrop-blur-sm">
+            <span className="text-sm font-medium text-white/90">🏭 World-Class Textile Machinery Manufacturing</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-gradient">
             {t('hero.title')}
           </h1>
           
-          <p className="text-xl md:text-2xl mb-4 font-medium text-blue-100">
+          <p className="text-xl md:text-3xl mb-4 font-semibold text-white">
             {t('hero.subtitle')}
           </p>
           
-          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-blue-50">
+          <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed text-white/90">
             {t('hero.description')}
           </p>
 
-          {/* Action Buttons */}
+          {/* Value Propositions */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+              <div className="text-sm font-medium text-white">✓ Premium Quality</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+              <div className="text-sm font-medium text-white">✓ Export Ready</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+              <div className="text-sm font-medium text-white">✓ Technical Excellence</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+              <div className="text-sm font-medium text-white">✓ Competitive Price</div>
+            </div>
+          </div>
+
+          {/* Enhanced Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               onClick={handleConsultation}
               size="lg"
-              className="btn-industrial text-lg px-8 py-3"
+              className="btn-premium text-lg px-10 py-4 text-white shadow-2xl hover:shadow-white/20"
             >
               <Phone className="h-5 w-5 mr-2" />
               {t('hero.consultation')}
@@ -64,7 +87,7 @@ export const Hero = () => {
               onClick={handleCatalog}
               variant="outline"
               size="lg"
-              className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-3"
+              className="bg-white/15 border-white/40 text-white hover:bg-white/25 text-lg px-10 py-4 backdrop-blur-sm"
             >
               <Download className="h-5 w-5 mr-2" />
               {t('hero.catalog')}
@@ -74,19 +97,39 @@ export const Hero = () => {
               onClick={handleWhatsApp}
               variant="outline"
               size="lg"
-              className="bg-green-600 border-green-500 text-white hover:bg-green-700 text-lg px-8 py-3"
+              className="bg-green-600/90 border-green-400 text-white hover:bg-green-600 text-lg px-10 py-4 backdrop-blur-sm"
             >
               <MessageCircle className="h-5 w-5 mr-2" />
               {t('hero.whatsapp')}
             </Button>
           </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/80">
+            <div className="text-center">
+              <div className="text-2xl font-bold">15+</div>
+              <div className="text-sm">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold">500+</div>
+              <div className="text-sm">Machines Delivered</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold">50+</div>
+              <div className="text-sm">Export Countries</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold">98%</div>
+              <div className="text-sm">Customer Satisfaction</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Enhanced Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center backdrop-blur-sm">
+          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

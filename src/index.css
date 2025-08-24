@@ -2,55 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Industrial Design System for TEXOR - All colors MUST be HSL */
+/* Professional Industrial Design System for TEXOR - World-Class Textile Machinery */
 
 @layer base {
   :root {
-    /* Light Industrial Theme - Enhanced for better visibility */
+    /* Enhanced Professional Industrial Theme */
     --background: 0 0% 99%;
-    --foreground: 220 20% 20%;
+    --foreground: 220 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card-foreground: 220 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover-foreground: 220 25% 15%;
 
-    /* Industrial Blue Primary - Enhanced contrast */
-    --primary: 210 90% 45%;
+    /* Professional Industrial Blue - Premium Brand Colors */
+    --primary: 210 100% 42%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 210 90% 40%;
+    --primary-hover: 210 100% 38%;
+    --primary-light: 210 100% 85%;
 
-    /* Light Gray Secondary */
-    --secondary: 220 15% 94%;
-    --secondary-foreground: 220 20% 25%;
+    /* Professional Steel Gray */
+    --secondary: 220 20% 92%;
+    --secondary-foreground: 220 30% 20%;
 
-    /* Muted Industrial - Better contrast */
-    --muted: 220 12% 90%;
-    --muted-foreground: 220 15% 40%;
+    /* Enhanced Industrial Muted */
+    --muted: 220 15% 88%;
+    --muted-foreground: 220 20% 35%;
 
-    /* Steel Blue Accent */
-    --accent: 200 30% 85%;
-    --accent-foreground: 220 20% 20%;
+    /* Premium Steel Accent */
+    --accent: 200 25% 82%;
+    --accent-foreground: 220 25% 15%;
+
+    /* Success & Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 85%;
-    --input: 220 15% 85%;
-    --ring: 210 90% 45%;
+    --border: 220 20% 82%;
+    --input: 220 20% 82%;
+    --ring: 210 100% 42%;
 
     --radius: 0.5rem;
 
-    /* Industrial Gradients - Enhanced */
-    --gradient-industrial: linear-gradient(135deg, hsl(210 90% 45%), hsl(200 70% 50%));
-    --gradient-steel: linear-gradient(180deg, hsl(220 12% 96%), hsl(220 15% 88%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 90% 45% / 0.95), hsl(220 20% 20% / 0.95));
+    /* Professional Gradients */
+    --gradient-industrial: linear-gradient(135deg, hsl(210 100% 42%), hsl(200 80% 45%));
+    --gradient-steel: linear-gradient(180deg, hsl(220 15% 96%), hsl(220 20% 88%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 42% / 0.95), hsl(220 30% 15% / 0.95));
+    --gradient-premium: linear-gradient(135deg, hsl(210 100% 42%), hsl(220 80% 35%));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 99%), hsl(220 15% 96%));
 
-    /* Industrial Shadows - Enhanced */
-    --shadow-industrial: 0 8px 32px hsl(210 90% 45% / 0.15);
-    --shadow-card: 0 4px 20px hsl(220 20% 20% / 0.08);
-    --shadow-elevated: 0 12px 40px hsl(220 20% 20% / 0.12);
+    /* Professional Shadows & Effects */
+    --shadow-industrial: 0 10px 40px hsl(210 100% 42% / 0.15);
+    --shadow-card: 0 6px 25px hsl(220 30% 15% / 0.08);
+    --shadow-elevated: 0 15px 50px hsl(220 30% 15% / 0.12);
+    --shadow-premium: 0 20px 60px hsl(210 100% 42% / 0.20);
+    
+    /* Brand-specific Variables */
+    --texor-blue: 210 100% 42%;
+    --texor-steel: 220 25% 85%;
+    --texor-dark: 220 30% 15%;
 
     --sidebar-background: 0 0% 99%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -162,21 +177,49 @@
     line-height: 1.6;
   }
 
-  /* Industrial Button Styles */
+  /* Professional Industrial Components */
   .btn-industrial {
-    @apply bg-primary text-primary-foreground;
+    @apply bg-primary text-primary-foreground font-semibold;
     @apply shadow-[var(--shadow-industrial)] transition-all duration-300;
-    @apply hover:shadow-[var(--shadow-elevated)] hover:scale-105;
+    @apply hover:shadow-[var(--shadow-premium)] hover:scale-105;
+    @apply border border-primary/20;
   }
 
-  /* Industrial Card */
+  .btn-premium {
+    @apply bg-gradient-to-r from-primary to-primary/90 text-primary-foreground font-semibold;
+    @apply shadow-[var(--shadow-premium)] transition-all duration-300;
+    @apply hover:shadow-[var(--shadow-elevated)] hover:scale-105;
+    @apply border border-primary/30;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground font-medium;
+    @apply shadow-[var(--shadow-card)] transition-all duration-300;
+    @apply hover:shadow-[var(--shadow-elevated)] hover:scale-102;
+    @apply border border-border;
+  }
+
+  /* Professional Cards */
   .card-industrial {
     @apply bg-card border border-border rounded-lg;
     @apply shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)];
-    @apply transition-all duration-300;
+    @apply transition-all duration-300 hover:scale-102;
   }
 
-  /* Gradient Backgrounds */
+  .card-premium {
+    @apply bg-card border border-primary/10 rounded-lg;
+    @apply shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-elevated)];
+    @apply transition-all duration-300 hover:scale-102;
+    background: linear-gradient(135deg, hsl(var(--card)), hsl(var(--primary-light)));
+  }
+
+  .card-feature {
+    @apply bg-gradient-to-br from-card to-secondary/30 border border-border rounded-lg;
+    @apply shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)];
+    @apply transition-all duration-300 hover:scale-105;
+  }
+
+  /* Professional Gradients */
   .bg-gradient-industrial {
     background: var(--gradient-industrial);
   }
@@ -187,5 +230,62 @@
 
   .bg-gradient-hero {
     background: var(--gradient-hero);
+  }
+
+  .bg-gradient-premium {
+    background: var(--gradient-premium);
+  }
+
+  .bg-gradient-section {
+    background: var(--gradient-section);
+  }
+
+  /* Professional Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* Professional Text Styles */
+  .text-gradient {
+    background: var(--gradient-industrial);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-premium {
+    @apply text-primary font-semibold;
+  }
+
+  /* Professional Borders & Dividers */
+  .border-premium {
+    @apply border-primary/20;
+  }
+
+  .divider-premium {
+    @apply w-20 h-1 bg-gradient-industrial rounded-full mx-auto;
   }
 }
