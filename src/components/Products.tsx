@@ -21,13 +21,15 @@ export const Products = () => {
       image: bobbinImage,
       specs: currentLanguage === 'fa'
         ? [
-          'سرعت: 1000-6000 دور در دقیقه',
+          'سرعت دستگاه: 0-800 متر بر دقیقه',
+          'سرعت دورانی: 1000-6000 دور در دقیقه',
           'کنترل تنش: دیجیتال',
           'مواد قابل پیچش: همه انواع نخ',
           'دقت پیچش: ±0.1%'
         ]
         : [
-          'Speed: 1000-6000 RPM',
+          'Machine speed: 0-800 meters per minute',
+          'Rotational speed: 1000-6000 RPM',
           'Tension control: Digital',
           'Material: All yarn types',
           'Winding accuracy: ±0.1%'
