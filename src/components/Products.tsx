@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useLanguage } from "@/hooks/useLanguage";
 import { MessageCircle, FileText, Settings, Zap, ShieldCheck } from "lucide-react";
-import bobbinImage from "@/assets/bobbin-winder.jpg";
+import bobbinImage from "@/assets/bobbin-winder-new.jpg";
 import lacquerImage from "@/assets/lacquer-machine.jpg";
 import catalogImage from "@/assets/catalog-image.jpg";
 
