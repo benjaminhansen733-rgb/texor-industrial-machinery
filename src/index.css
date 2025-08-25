@@ -209,7 +209,7 @@
   .card-premium {
     @apply bg-card border border-primary/10 rounded-lg;
     @apply shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-elevated)];
-    @apply transition-all duration-300 hover:scale-102;
+    @apply transition-all duration-300 hover:scale-105;
     background: linear-gradient(135deg, hsl(var(--card)), hsl(var(--primary-light)));
   }
 
