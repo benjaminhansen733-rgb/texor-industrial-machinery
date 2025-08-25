@@ -195,7 +195,7 @@
   .btn-secondary {
     @apply bg-secondary text-secondary-foreground font-medium;
     @apply shadow-[var(--shadow-card)] transition-all duration-300;
-    @apply hover:shadow-[var(--shadow-elevated)] hover:scale-102;
+    @apply hover:shadow-[var(--shadow-elevated)] hover:scale-105;
     @apply border border-border;
   }
 
@@ -203,7 +203,7 @@
   .card-industrial {
     @apply bg-card border border-border rounded-lg;
     @apply shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elevated)];
-    @apply transition-all duration-300 hover:scale-102;
+    @apply transition-all duration-300 hover:scale-105;
   }
 
   .card-premium {
