@@ -19,72 +19,57 @@ export const CaseStudies = () => {
 
   const caseStudies = [
     {
-      company: "Isfahan Textile Industries",
+      company: t('caseStudies.companies.isfahanTextile'),
       logo: "IT",
-      location: "Isfahan, Iran",
-      industry: "Industrial Textiles",
+      location: t('caseStudies.locations.isfahan'),
+      industry: t('caseStudies.industries.industrialTextiles'),
       projectDate: "2023",
-      challenge: "Needed to upgrade 50 old bobbin winding machines with frequent thread breakage issues",
-      solution: "Installed 50 units of TEXOR Traversing Bobbin Winders with advanced control systems", 
-      results: [
-        "95% reduction in thread breakage",
-        "40% increase in production efficiency", 
-        "60% reduction in maintenance costs",
-        "ROI achieved in 8 months"
-      ],
-      testimonial: "TEXOR's solutions transformed our production line. The reduction in thread breakage and increased efficiency exceeded our expectations.",
-      customerName: "Ahmad Rezaei",
-      customerRole: "Production Manager",
+      challenge: t('caseStudies.challenges.isfahanTextile'),
+      solution: t('caseStudies.solutions.isfahanTextile'), 
+      results: t('caseStudies.results.isfahanTextile', { returnObjects: true }) as string[],
+      testimonial: t('caseStudies.testimonials.isfahanTextile'),
+      customerName: t('caseStudies.customers.ahmadRezaei'),
+      customerRole: t('caseStudies.roles.productionManager'),
       rating: 5,
       image: "/api/placeholder/400/300"
     },
     {
-      company: "Turkish Carpet Manufacturing Co.", 
+      company: t('caseStudies.companies.turkishCarpet'), 
       logo: "TC",
-      location: "Istanbul, Turkey",
-      industry: "Carpet Manufacturing",
+      location: t('caseStudies.locations.istanbul'),
+      industry: t('caseStudies.industries.carpetManufacturing'),
       projectDate: "2023",
-      challenge: "Required specialized lacquering equipment for premium carpet yarn production",
-      solution: "Deployed 25 units of TEXOR Traversing Lacquer Machines with precision thickness control",
-      results: [
-        "Uniform coating quality achieved",
-        "30% faster production cycles",
-        "25% reduction in material waste",
-        "Premium quality certification obtained"
-      ],
-      testimonial: "The precision and consistency of TEXOR lacquer machines helped us achieve premium quality standards for export markets.",
-      customerName: "Mehmet Özkan", 
-      customerRole: "Quality Director",
+      challenge: t('caseStudies.challenges.turkishCarpet'),
+      solution: t('caseStudies.solutions.turkishCarpet'),
+      results: t('caseStudies.results.turkishCarpet', { returnObjects: true }) as string[],
+      testimonial: t('caseStudies.testimonials.turkishCarpet'),
+      customerName: t('caseStudies.customers.mehmetOzkan'), 
+      customerRole: t('caseStudies.roles.qualityDirector'),
       rating: 5,
       image: "/api/placeholder/400/300"
     },
     {
-      company: "Gulf Textile Solutions",
+      company: t('caseStudies.companies.gulfTextile'),
       logo: "GS", 
-      location: "Dubai, UAE",
-      industry: "Technical Textiles",
+      location: t('caseStudies.locations.dubai'),
+      industry: t('caseStudies.industries.technicalTextiles'),
       projectDate: "2024",
-      challenge: "Expanding production capacity for high-performance technical yarns",
-      solution: "Complete production line setup with 75 TEXOR machines and automation systems",
-      results: [
-        "300% increase in production capacity",
-        "International quality standards met",
-        "24/7 operation capability achieved", 
-        "Export to 15 countries established"
-      ],
-      testimonial: "TEXOR's comprehensive solution enabled us to enter new markets and achieve international quality standards.",
-      customerName: "Sarah Al-Mahmoud",
-      customerRole: "Operations Director", 
+      challenge: t('caseStudies.challenges.gulfTextile'),
+      solution: t('caseStudies.solutions.gulfTextile'),
+      results: t('caseStudies.results.gulfTextile', { returnObjects: true }) as string[],
+      testimonial: t('caseStudies.testimonials.gulfTextile'),
+      customerName: t('caseStudies.customers.sarahAlMahmoud'),
+      customerRole: t('caseStudies.roles.operationsDirector'), 
       rating: 5,
       image: "/api/placeholder/400/300"
     }
   ];
 
   const stats = [
-    { icon: Building, number: "150+", label: "Companies Served" },
-    { icon: Users, number: "500+", label: "Satisfied Customers" },
-    { icon: Clock, number: "99.5%", label: "Uptime Reliability" },
-    { icon: TrendingUp, number: "40%", label: "Avg. Efficiency Gain" }
+    { icon: Building, number: "150+", label: t('caseStudies.stats.companiesServed') },
+    { icon: Users, number: "500+", label: t('caseStudies.stats.satisfiedCustomers') },
+    { icon: Clock, number: "99.5%", label: t('caseStudies.stats.uptimeReliability') },
+    { icon: TrendingUp, number: "40%", label: t('caseStudies.stats.avgEfficiencyGain') }
   ];
 
   return (
@@ -93,14 +78,16 @@ export const CaseStudies = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 text-primary border-primary/20">
-            Success Stories
+            {t('caseStudies.badgeText')}
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 industrial-heading">
-            Real Results from <span className="text-gradient">Real Customers</span>
+            {t('caseStudies.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            See how leading textile manufacturers have transformed their operations 
-            with TEXOR's advanced machinery solutions.
+            {t('caseStudies.subtitle')}
+          </p>
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-4">
+            {t('caseStudies.description')}
           </p>
           <div className="divider-premium mt-8"></div>
         </div>
@@ -239,7 +226,7 @@ export const CaseStudies = () => {
             className="btn-premium px-8 py-3"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Start Your Success Story
+            {t('caseStudies.ctaText')}
           </Button>
         </div>
       </div>

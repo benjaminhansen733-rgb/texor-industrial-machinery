@@ -18,39 +18,39 @@ export const BuyerJourney = () => {
 
   const journeys = [
     {
-      type: "New Customer",
+      type: t('buyerJourney.types.newCustomer'),
       icon: Building2,
       color: "bg-blue-500",
-      description: "First-time textile machinery buyer looking for reliable solutions",
-      needs: ["Product overview", "Quality assurance", "Pricing information"],
-      cta: "Start Your Journey",
+      description: t('buyerJourney.descriptions.newCustomer'),
+      needs: t('buyerJourney.needs.newCustomer', { returnObjects: true }) as string[],
+      cta: t('buyerJourney.ctas.newCustomer'),
       action: () => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
     },
     {
-      type: "Design Engineer", 
+      type: t('buyerJourney.types.designEngineer'), 
       icon: Wrench,
       color: "bg-green-500",
-      description: "Technical professional seeking detailed specifications and customization",
-      needs: ["Technical specs", "CAD drawings", "Customization options"],
-      cta: "View Technical Details",
+      description: t('buyerJourney.descriptions.designEngineer'),
+      needs: t('buyerJourney.needs.designEngineer', { returnObjects: true }) as string[],
+      cta: t('buyerJourney.ctas.designEngineer'),
       action: () => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })
     },
     {
-      type: "Procurement Manager",
+      type: t('buyerJourney.types.procurementManager'),
       icon: ShoppingCart, 
       color: "bg-orange-500",
-      description: "Decision maker comparing suppliers and negotiating terms",
-      needs: ["Bulk pricing", "Delivery terms", "Support packages"],
-      cta: "Request Quote",
+      description: t('buyerJourney.descriptions.procurementManager'),
+      needs: t('buyerJourney.needs.procurementManager', { returnObjects: true }) as string[],
+      cta: t('buyerJourney.ctas.procurementManager'),
       action: () => window.open('https://wa.me/+989133629006?text=Request for bulk pricing and procurement details', '_blank')
     },
     {
-      type: "Sales Representative",
+      type: t('buyerJourney.types.salesRepresentative'),
       icon: Users,
       color: "bg-purple-500", 
-      description: "Partner or distributor looking to represent TEXOR products",
-      needs: ["Partnership terms", "Training materials", "Sales support"],
-      cta: "Partner With Us",
+      description: t('buyerJourney.descriptions.salesRepresentative'),
+      needs: t('buyerJourney.needs.salesRepresentative', { returnObjects: true }) as string[],
+      cta: t('buyerJourney.ctas.salesRepresentative'),
       action: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
     }
   ];
@@ -58,20 +58,20 @@ export const BuyerJourney = () => {
   const quickActions = [
     {
       icon: FileText,
-      title: "Download Catalog",
-      description: "Complete product specifications and features",
+      title: t('buyerJourney.quickActions.downloadCatalog.title'),
+      description: t('buyerJourney.quickActions.downloadCatalog.description'),
       action: () => window.open('#', '_blank')
     },
     {
       icon: Phone,
-      title: "Schedule Consultation", 
-      description: "Free technical consultation with our experts",
+      title: t('buyerJourney.quickActions.scheduleConsultation.title'), 
+      description: t('buyerJourney.quickActions.scheduleConsultation.description'),
       action: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
     },
     {
       icon: MessageCircle,
-      title: "WhatsApp Support",
-      description: "Instant answers to your questions",
+      title: t('buyerJourney.quickActions.whatsappSupport.title'),
+      description: t('buyerJourney.quickActions.whatsappSupport.description'),
       action: () => window.open('https://wa.me/+989133629006', '_blank')
     }
   ];
@@ -82,14 +82,13 @@ export const BuyerJourney = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 text-primary border-primary/20">
-            Find Your Path
+            {t('buyerJourney.badgeText')}
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 industrial-heading">
-            Choose Your <span className="text-gradient">Journey</span>
+            {t('buyerJourney.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Whether you're a new customer, engineer, procurement manager, or potential partner, 
-            we have the right path to help you succeed with TEXOR solutions.
+            {t('buyerJourney.subtitle')}
           </p>
           <div className="divider-premium mt-8"></div>
         </div>
@@ -149,10 +148,10 @@ export const BuyerJourney = () => {
         <div className="bg-gradient-steel rounded-2xl p-8 border border-border">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-4 industrial-heading">
-              Quick Actions
+              {t('buyerJourney.quickActions.title')}
             </h3>
             <p className="text-muted-foreground">
-              Get immediate access to the resources you need
+              {t('buyerJourney.quickActions.subtitle')}
             </p>
           </div>
 

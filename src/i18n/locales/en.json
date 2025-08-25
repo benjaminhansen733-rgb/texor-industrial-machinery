@@ -128,6 +128,171 @@
   "search": {
     "placeholder": "Search products and services..."
   },
+  "buyerJourney": {
+    "title": "Choose Your Journey",
+    "subtitle": "Whether you're a new customer, engineer, procurement manager, or potential partner, we have the right path to help you succeed with TEXOR solutions.",
+    "badgeText": "Find Your Path",
+    "types": {
+      "newCustomer": "New Customer",
+      "designEngineer": "Design Engineer", 
+      "procurementManager": "Procurement Manager",
+      "salesRepresentative": "Sales Representative"
+    },
+    "descriptions": {
+      "newCustomer": "First-time textile machinery buyer looking for reliable solutions",
+      "designEngineer": "Technical professional seeking detailed specifications and customization",
+      "procurementManager": "Decision maker comparing suppliers and negotiating terms",
+      "salesRepresentative": "Partner or distributor looking to represent TEXOR products"
+    },
+    "needs": {
+      "newCustomer": ["Product overview", "Quality assurance", "Pricing information"],
+      "designEngineer": ["Technical specs", "CAD drawings", "Customization options"],
+      "procurementManager": ["Bulk pricing", "Delivery terms", "Support packages"],
+      "salesRepresentative": ["Partnership terms", "Training materials", "Sales support"]
+    },
+    "ctas": {
+      "newCustomer": "Start Your Journey",
+      "designEngineer": "View Technical Details",
+      "procurementManager": "Request Quote",
+      "salesRepresentative": "Partner With Us"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "subtitle": "Get what you need, when you need it",
+      "downloadCatalog": {
+        "title": "Download Catalog",
+        "description": "Complete product specifications and features"
+      },
+      "scheduleConsultation": {
+        "title": "Schedule Consultation",
+        "description": "Free technical consultation with our experts"
+      },
+      "whatsappSupport": {
+        "title": "WhatsApp Support",
+        "description": "Instant answers to your questions"
+      }
+    }
+  },
+  "caseStudies": {
+    "title": "Success Stories",
+    "subtitle": "Real Results from Real Customers",
+    "description": "See how leading textile manufacturers across the Middle East and beyond have transformed their operations with TEXOR solutions.",
+    "badgeText": "Customer Success",
+    "companies": {
+      "isfahanTextile": "Isfahan Textile Industries",
+      "turkishCarpet": "Turkish Carpet Manufacturing Co.",
+      "gulfTextile": "Gulf Textile Solutions"
+    },
+    "industries": {
+      "industrialTextiles": "Industrial Textiles",
+      "carpetManufacturing": "Carpet Manufacturing", 
+      "technicalTextiles": "Technical Textiles"
+    },
+    "locations": {
+      "isfahan": "Isfahan, Iran",
+      "istanbul": "Istanbul, Turkey",
+      "dubai": "Dubai, UAE"
+    },
+    "roles": {
+      "productionManager": "Production Manager",
+      "qualityDirector": "Quality Director",
+      "operationsDirector": "Operations Director"
+    },
+    "customers": {
+      "ahmadRezaei": "Ahmad Rezaei",
+      "mehmetOzkan": "Mehmet Özkan",
+      "sarahAlMahmoud": "Sarah Al-Mahmoud"
+    },
+    "challenges": {
+      "isfahanTextile": "Needed to upgrade 50 old bobbin winding machines with frequent thread breakage issues",
+      "turkishCarpet": "Required specialized lacquering equipment for premium carpet yarn production",
+      "gulfTextile": "Expanding production capacity for high-performance technical yarns"
+    },
+    "solutions": {
+      "isfahanTextile": "Installed 50 units of TEXOR Traversing Bobbin Winders with advanced control systems",
+      "turkishCarpet": "Deployed 25 units of TEXOR Traversing Lacquer Machines with precision thickness control",
+      "gulfTextile": "Complete production line setup with 75 TEXOR machines and automation systems"
+    },
+    "results": {
+      "isfahanTextile": [
+        "95% reduction in thread breakage",
+        "40% increase in production efficiency",
+        "60% reduction in maintenance costs",
+        "ROI achieved in 8 months"
+      ],
+      "turkishCarpet": [
+        "Uniform coating quality achieved",
+        "30% faster production cycles", 
+        "25% reduction in material waste",
+        "Premium quality certification obtained"
+      ],
+      "gulfTextile": [
+        "300% increase in production capacity",
+        "International quality standards met",
+        "24/7 operation capability achieved",
+        "Export to 15 countries established"
+      ]
+    },
+    "testimonials": {
+      "isfahanTextile": "TEXOR's solutions transformed our production line. The reduction in thread breakage and increased efficiency exceeded our expectations.",
+      "turkishCarpet": "The precision and consistency of TEXOR lacquer machines helped us achieve premium quality standards for export markets.",
+      "gulfTextile": "TEXOR's comprehensive solution enabled us to enter new markets and achieve international quality standards."
+    },
+    "stats": {
+      "companiesServed": "Companies Served",
+      "satisfiedCustomers": "Satisfied Customers",
+      "uptimeReliability": "Uptime Reliability",
+      "avgEfficiencyGain": "Avg. Efficiency Gain"
+    },
+    "ctaText": "Start Your Success Story"
+  },
+  "technicalResources": {
+    "title": "Technical Resources",
+    "subtitle": "Everything you need to make informed decisions",
+    "description": "Access our comprehensive library of technical documentation, case studies, and educational content.",
+    "badgeText": "Resources",
+    "categories": {
+      "all": "All Resources",
+      "catalogs": "Product Catalogs", 
+      "caseStudies": "Case Studies",
+      "videos": "Video Guides",
+      "articles": "Technical Articles"
+    },
+    "resources": {
+      "productCatalog": {
+        "title": "Complete Product Catalog 2024",
+        "description": "Comprehensive specifications for all TEXOR machinery including bobbin winders, lacquer machines, and accessories"
+      },
+      "installationGuide": {
+        "title": "Installation & Setup Guide", 
+        "description": "Step-by-step installation procedures and best practices for optimal machine performance"
+      },
+      "maintenanceManual": {
+        "title": "Maintenance Manual",
+        "description": "Detailed maintenance schedules and troubleshooting guide to maximize machine lifespan"
+      },
+      "videoDemo": {
+        "title": "Machine Operation Video",
+        "description": "Detailed video demonstration of bobbin winding and lacquering processes"
+      },
+      "caseStudy": {
+        "title": "Isfahan Textile Case Study",
+        "description": "Complete project overview: challenges, implementation, and 95% efficiency improvement results"
+      }
+    },
+    "actions": {
+      "download": "Download",
+      "watch": "Watch",
+      "requestAccess": "Request Access"
+    },
+    "metadata": {
+      "duration": "Duration",
+      "fileSize": "File Size", 
+      "pages": "Pages",
+      "views": "Views",
+      "downloads": "Downloads"
+    }
+  },
   "footer": {
     "title": "TEXOR",
     "company": "Behsa Faraz Kavir Engineering Company",
