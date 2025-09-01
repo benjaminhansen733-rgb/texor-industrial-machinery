@@ -19,8 +19,7 @@ export const TechnicalResources = () => {
   const resources = [
     {
       type: "catalog",
-      title: "Complete Product Catalog 2024",
-      description: "Comprehensive specifications, features, and technical drawings for all TEXOR machinery",
+      titleKey: "productCatalog",
       fileSize: "8.5 MB",
       pages: "48 pages",
       format: "PDF",
@@ -30,8 +29,7 @@ export const TechnicalResources = () => {
     },
     {
       type: "technical",
-      title: "Traversing Technology White Paper",
-      description: "In-depth analysis of traversing mechanisms and their advantages in modern textile production",
+      titleKey: "installationGuide",
       fileSize: "2.1 MB", 
       pages: "12 pages",
       format: "PDF",
@@ -41,8 +39,7 @@ export const TechnicalResources = () => {
     },
     {
       type: "video",
-      title: "How TEXOR Machines Work",
-      description: "Detailed video demonstration of bobbin winding and lacquering processes",
+      titleKey: "videoDemo",
       duration: "8:32",
       format: "Video",
       viewCount: "15,234",
@@ -51,8 +48,7 @@ export const TechnicalResources = () => {
     },
     {
       type: "case-study",
-      title: "Isfahan Textile Case Study",
-      description: "Complete project overview: challenges, implementation, and 95% efficiency improvement results",
+      titleKey: "caseStudy",
       fileSize: "1.8 MB",
       pages: "6 pages", 
       format: "PDF",
@@ -65,20 +61,20 @@ export const TechnicalResources = () => {
   const news = [
     {
       date: "2024-01-15",
-      title: "TEXOR Launches New Automation Control System",
-      excerpt: "Advanced AI-powered control system reduces setup time by 60% and improves precision",
+      titleKey: "news.automation",
+      excerptKey: "news.automationExcerpt",
       readTime: "3 min read"
     },
     {
       date: "2024-01-08", 
-      title: "Export Achievement: 50+ Countries Now Served",
-      excerpt: "TEXOR reaches new milestone with successful delivery to over 50 countries worldwide",
+      titleKey: "news.export",
+      excerptKey: "news.exportExcerpt",
       readTime: "2 min read"
     },
     {
       date: "2023-12-20",
-      title: "Quality Certification: ISO 9001:2015 Renewed",
-      excerpt: "TEXOR maintains highest quality standards with renewed international certification",
+      titleKey: "news.certification",
+      excerptKey: "news.certificationExcerpt",
       readTime: "2 min read"
     }
   ];
@@ -102,14 +98,13 @@ export const TechnicalResources = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 text-primary border-primary/20">
-            Technical Resources
+            {t('technicalResources.badgeText')}
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 industrial-heading">
-            Knowledge Hub & <span className="text-gradient">Resources</span>
+            {t('technicalResources.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Access comprehensive technical documentation, case studies, and industry insights 
-            to make informed decisions about your textile machinery investments.
+            {t('technicalResources.description')}
           </p>
           <div className="divider-premium mt-8"></div>
         </div>
@@ -119,7 +114,7 @@ export const TechnicalResources = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-8">
               <FileText className="h-6 w-6 text-primary" />
-              <h3 className="text-2xl font-bold industrial-heading">Technical Documentation</h3>
+              <h3 className="text-2xl font-bold industrial-heading">{t('technicalResources.categories.all')}</h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -141,19 +136,19 @@ export const TechnicalResources = () => {
                           </div>
                           {resource.featured && (
                             <Badge variant="default" className="text-xs">
-                              Featured
+                              {t('technicalResources.featured')}
                             </Badge>
                           )}
                         </div>
                       </div>
                       <CardTitle className="text-lg font-semibold industrial-heading group-hover:text-primary transition-colors">
-                        {resource.title}
+                        {t(`technicalResources.resources.${resource.titleKey}.title`)}
                       </CardTitle>
                     </CardHeader>
                     
                     <CardContent className="pt-0">
                       <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                        {resource.description}
+                        {t(`technicalResources.resources.${resource.titleKey}.description`)}
                       </p>
                       
                       <div className="flex flex-wrap gap-2 mb-4 text-xs text-muted-foreground">
@@ -178,13 +173,13 @@ export const TechnicalResources = () => {
                         {resource.downloadCount && (
                           <div className="flex items-center gap-1">
                             <Download className="h-3 w-3" />
-                            {resource.downloadCount} downloads
+                            {resource.downloadCount} {t('technicalResources.metadata.downloads')}
                           </div>
                         )}
                         {resource.viewCount && (
                           <div className="flex items-center gap-1">
                             <Eye className="h-3 w-3" />
-                            {resource.viewCount} views
+                            {resource.viewCount} {t('technicalResources.metadata.views')}
                           </div>
                         )}
                       </div>
@@ -193,7 +188,7 @@ export const TechnicalResources = () => {
                         className="w-full btn-industrial text-sm"
                         onClick={() => handleDownload(resource.type)}
                       >
-                        {resource.type === 'video' ? 'Watch Video' : 'Download'}
+                        {resource.type === 'video' ? t('technicalResources.actions.watch') : t('technicalResources.actions.download')}
                         <ExternalLink className="h-4 w-4 ml-2" />
                       </Button>
                     </CardContent>
@@ -207,7 +202,7 @@ export const TechnicalResources = () => {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <Calendar className="h-6 w-6 text-primary" />
-              <h3 className="text-2xl font-bold industrial-heading">Company News</h3>
+              <h3 className="text-2xl font-bold industrial-heading">{t('technicalResources.news.title')}</h3>
             </div>
 
             <div className="space-y-6">
@@ -222,10 +217,10 @@ export const TechnicalResources = () => {
                       {formatDate(article.date)}
                     </div>
                     <h4 className="font-semibold mb-2 group-hover:text-primary transition-colors leading-tight">
-                      {article.title}
+                      {t(`technicalResources.${article.titleKey}`)}
                     </h4>
                     <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
-                      {article.excerpt}
+                      {t(`technicalResources.${article.excerptKey}`)}
                     </p>
                     <div className="flex items-center justify-between">
                       <div className="text-xs text-muted-foreground flex items-center gap-1">
@@ -242,15 +237,15 @@ export const TechnicalResources = () => {
             {/* Newsletter Signup */}
             <Card className="card-premium mt-8">
               <CardContent className="p-6 text-center">
-                <h4 className="font-semibold mb-2 industrial-heading">Stay Updated</h4>
+                <h4 className="font-semibold mb-2 industrial-heading">{t('technicalResources.newsletter.title')}</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Get the latest technical insights and product updates
+                  {t('technicalResources.newsletter.description')}
                 </p>
                 <Button 
                   className="w-full btn-industrial text-sm"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Subscribe to Newsletter
+                  {t('technicalResources.newsletter.subscribe')}
                 </Button>
               </CardContent>
             </Card>

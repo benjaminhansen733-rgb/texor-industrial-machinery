@@ -41,7 +41,7 @@ export const Hero = () => {
         <div className="max-w-5xl mx-auto animate-fade-in">
           {/* Brand Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-full mb-6 backdrop-blur-sm">
-            <span className="text-sm font-medium text-white/90">🏭 World-Class Textile Machinery Manufacturing</span>
+            <span className="text-sm font-medium text-white/90">🏭 {t('hero.badge')}</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-gradient">
@@ -59,16 +59,16 @@ export const Hero = () => {
           {/* Value Propositions */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-              <div className="text-sm font-medium text-white">✓ Premium Quality</div>
+              <div className="text-sm font-medium text-white">✓ {t('hero.valueProps.premiumQuality')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-              <div className="text-sm font-medium text-white">✓ Export Ready</div>
+              <div className="text-sm font-medium text-white">✓ {t('hero.valueProps.exportReady')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-              <div className="text-sm font-medium text-white">✓ Technical Excellence</div>
+              <div className="text-sm font-medium text-white">✓ {t('hero.valueProps.technicalExcellence')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-              <div className="text-sm font-medium text-white">✓ Competitive Price</div>
+              <div className="text-sm font-medium text-white">✓ {t('hero.valueProps.competitivePrice')}</div>
             </div>
           </div>
 
@@ -108,19 +108,19 @@ export const Hero = () => {
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/80">
             <div className="text-center">
               <div className="text-2xl font-bold">15+</div>
-              <div className="text-sm">Years Experience</div>
+              <div className="text-sm">{t('hero.trustIndicators.yearsExperience')}</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">500+</div>
-              <div className="text-sm">Machines Delivered</div>
+              <div className="text-sm">{t('hero.trustIndicators.machinesDelivered')}</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">50+</div>
-              <div className="text-sm">Export Countries</div>
+              <div className="text-sm">{t('hero.trustIndicators.exportCountries')}</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">98%</div>
-              <div className="text-sm">Customer Satisfaction</div>
+              <div className="text-sm">{t('hero.trustIndicators.customerSatisfaction')}</div>
             </div>
           </div>
         </div>

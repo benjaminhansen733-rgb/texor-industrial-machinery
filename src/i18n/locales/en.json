@@ -301,5 +301,128 @@
     "whatsapp": "WhatsApp",
     "socialMedia": "Social Media",
     "rights": "All rights reserved"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  },
+  "valueProposition": {
+    "badge": "Why Choose TEXOR",
+    "title": "Your Partner in Textile Excellence",
+    "subtitle": "We deliver world-class textile machinery solutions that combine precision engineering, innovative technology, and competitive pricing for global markets.",
+    "values": {
+      "premiumQuality": {
+        "title": "Premium Quality",
+        "description": "World-class manufacturing standards with precision engineering"
+      },
+      "exportExcellence": {
+        "title": "Export Excellence",
+        "description": "Designed for global markets with international certifications"
+      },
+      "technicalInnovation": {
+        "title": "Technical Innovation",
+        "description": "Advanced traversing technology and automation systems"
+      },
+      "competitiveAdvantage": {
+        "title": "Competitive Advantage",
+        "description": "Optimal price-to-performance ratio in the industry"
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "Proven track record with 15+ years of expertise"
+      },
+      "customerSuccess": {
+        "title": "Customer Success",
+        "description": "98% satisfaction rate with comprehensive support"
+      }
+    },
+    "stats": {
+      "yearsExcellence": "Years of Excellence",
+      "machinesDelivered": "Machines Delivered",
+      "countriesServed": "Countries Served",
+      "customerSatisfaction": "Customer Satisfaction"
+    }
+  },
+  "hero": {
+    "title": "TEXOR",
+    "subtitle": "Precise Winding, Exceptional Quality",
+    "description": "Behsa Faraz Kavir Engineering Company under TEXOR brand, designer and manufacturer of spinning and machine carpet industry machinery",
+    "consultation": "Request Consultation",
+    "catalog": "Download Catalog",
+    "whatsapp": "WhatsApp Contact",
+    "badge": "World-Class Textile Machinery Manufacturing",
+    "valueProps": {
+      "premiumQuality": "Premium Quality",
+      "exportReady": "Export Ready",
+      "technicalExcellence": "Technical Excellence",
+      "competitivePrice": "Competitive Price"
+    },
+    "trustIndicators": {
+      "yearsExperience": "Years Experience",
+      "machinesDelivered": "Machines Delivered",
+      "exportCountries": "Export Countries",
+      "customerSatisfaction": "Customer Satisfaction"
+    }
+  },
+  "products": {
+    "title": "Texor Products",
+    "subtitle": "Specialized Machinery for Spinning and Machine Carpet Industry",
+    "catalogTitle": "Product Catalog",
+    "cta": {
+      "title": "Ready to Transform Your Production?",
+      "subtitle": "Get expert consultation and competitive pricing for your textile machinery needs"
+    },
+    "windingMachine": {
+      "title": "Traversing Thread Winder",
+      "description": "Thread winding machine with advanced traversing system and precise control",
+      "features": "Individual speed adjustment, thread break sensor, weight and length display"
+    },
+    "bobbinWinder": {
+      "title": "Traversing Bobbin Winder",
+      "description": "Industrial bobbin winder with traversing technology for complete thread uniformity",
+      "features": "Separate drives, operator efficiency control, shift work recording"
+    },
+    "lacquerMachine": {
+      "title": "Traversing Lacquer Machine",
+      "description": "Lacquering system with traversing motion for uniform coating",
+      "features": "Thickness control, uniform motion, high efficiency"
+    },
+    "lacquerer": {
+      "title": "Traversing Lacquer Machine",
+      "description": "Lacquering system with traversing motion for uniform coating",
+      "features": "Thickness control, uniform motion, high efficiency"
+    },
+    "specifications": {
+      "title": "Technical Specifications",
+      "capacity": "Machine Capacity",
+      "capacityDesc": "Number of designable heads: minimum 5, maximum unlimited (according to customer order)",
+      "controlSystem": "Advanced Control System",
+      "controlFeatures": [
+        "Thread weight display for each head",
+        "Individual speed and length setting for each head or group of heads",
+        "Real-time production length display and shift production recording",
+        "Definition of 4 work shifts (A, B, C, D) with operator efficiency calculation"
+      ],
+      "safety": "Thread Burning Prevention System",
+      "safetyDesc": "Thread break sensor and automatic stop for machine safety",
+      "independence": "Independent Operation of Each Head",
+      "independenceDesc": "Failure of one head does not stop the entire machine",
+      "efficiency": "Separate Drives and Optimal Energy Consumption",
+      "efficiencyDesc": "Separate drive for each motor for better adjustment and reduced energy consumption",
+      "quality": "Wound Thread Quality Stability",
+      "qualityDesc": "Complete uniformity in wound thread output",
+      "productivity": "Increased Production Efficiency",
+      "productivityDesc": "Using advanced traversing system to increase production speed",
+      "traverse": "Traversing Features",
+      "traverseDesc": "Solving problems of old machines with drum grooves and reducing thread breakage",
+      "materials": "Parts Material and Manufacturing Quality",
+      "materialsDesc": "Using special ceramics in thread path, anti-friction rollers, steel and aluminum alloy",
+      "compatibility": "Compatibility with Various Threads",
+      "compatibilityDesc": "Support for different thread numbers (single-ply, multi-ply, thick, thin)"
+    },
+    "requestQuote": "Request Quote",
+    "moreDetails": "More Details",
+    "consultation": "Free Consultation"
   }
 }

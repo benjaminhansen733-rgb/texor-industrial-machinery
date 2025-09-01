@@ -9,38 +9,32 @@ export const ValueProposition = () => {
   const values = [
     {
       icon: Award,
-      title: "Premium Quality",
-      description: "World-class manufacturing standards with precision engineering",
+      key: "premiumQuality",
       color: "text-primary"
     },
     {
       icon: Globe,
-      title: "Export Excellence", 
-      description: "Designed for global markets with international certifications",
+      key: "exportExcellence",
       color: "text-success"
     },
     {
       icon: Zap,
-      title: "Technical Innovation",
-      description: "Advanced traversing technology and automation systems", 
+      key: "technicalInnovation",
       color: "text-warning"
     },
     {
       icon: TrendingUp,
-      title: "Competitive Advantage",
-      description: "Optimal price-to-performance ratio in the industry",
+      key: "competitiveAdvantage",
       color: "text-primary"
     },
     {
       icon: Shield,
-      title: "Reliability",
-      description: "Proven track record with 15+ years of expertise",
+      key: "reliability",
       color: "text-success"
     },
     {
       icon: CheckCircle,
-      title: "Customer Success",
-      description: "98% satisfaction rate with comprehensive support",
+      key: "customerSuccess",
       color: "text-primary"
     }
   ];
@@ -50,14 +44,13 @@ export const ValueProposition = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 text-primary border-primary/20">
-            Why Choose TEXOR
+            {t('valueProposition.badge')}
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 industrial-heading">
-            Your Partner in <span className="text-gradient">Textile Excellence</span>
+            {t('valueProposition.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We deliver world-class textile machinery solutions that combine precision engineering, 
-            innovative technology, and competitive pricing for global markets.
+            {t('valueProposition.subtitle')}
           </p>
           <div className="divider-premium mt-8"></div>
         </div>
@@ -76,10 +69,10 @@ export const ValueProposition = () => {
                     <IconComponent className="h-8 w-8" />
                   </div>
                   <h3 className="text-xl font-semibold mb-4 industrial-heading group-hover:text-primary transition-colors">
-                    {value.title}
+                    {t(`valueProposition.values.${value.key}.title`)}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    {value.description}
+                    {t(`valueProposition.values.${value.key}.description`)}
                   </p>
                 </CardContent>
               </Card>
@@ -92,19 +85,19 @@ export const ValueProposition = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="animate-scale-in">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">15+</div>
-              <div className="text-sm md:text-base text-muted-foreground font-medium">Years of Excellence</div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">{t('valueProposition.stats.yearsExcellence')}</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: "100ms" }}>
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">500+</div>
-              <div className="text-sm md:text-base text-muted-foreground font-medium">Machines Delivered</div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">{t('valueProposition.stats.machinesDelivered')}</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: "200ms" }}>
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm md:text-base text-muted-foreground font-medium">Countries Served</div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">{t('valueProposition.stats.countriesServed')}</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: "300ms" }}>
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">98%</div>
-              <div className="text-sm md:text-base text-muted-foreground font-medium">Customer Satisfaction</div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">{t('valueProposition.stats.customerSatisfaction')}</div>
             </div>
           </div>
         </div>
