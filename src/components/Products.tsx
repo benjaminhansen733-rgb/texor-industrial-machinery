@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { useLanguage } from "@/hooks/useLanguage";
 import { MessageCircle, FileText, Settings, Zap, ShieldCheck } from "lucide-react";
 import bobbinImage from "@/assets/bobbin-winder-new.jpg";
-import lacquerImage from "@/assets/lacquer-machine.jpg";
+import lacquerImage from "@/assets/lacquer-machine-new.jpg";
 import catalogImage from "@/assets/catalog-image.jpg";
 
 export const Products = () => {
