@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/useLanguage";
 import { MessageCircle, Download, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-factory-bg.jpg";
+import heroImage from "@/assets/hero-industrial-bg.jpg";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -31,9 +31,9 @@ export const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Optimized overlay for better image visibility while maintaining blue theme */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-primary/70"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent"></div>
+        {/* Mild overlay to preserve machine details while maintaining blue theme */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/25 to-primary/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/15 via-transparent to-transparent"></div>
       </div>
 
       {/* Content */}
