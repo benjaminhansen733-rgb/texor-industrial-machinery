@@ -80,8 +80,13 @@ export const TechnicalResources = () => {
   ];
 
   const handleDownload = (resourceType: string) => {
-    // Simulate download - in real implementation, this would trigger actual file download
-    window.open('#', '_blank');
+    if (resourceType === 'video') {
+      // Open the machine operation video from Google Drive
+      window.open('https://drive.google.com/file/d/18dcKxXwLgCTe24x0eMhE4nnLKr8okPpu/view?usp=drivesdk', '_blank');
+    } else {
+      // Simulate download for other resources - in real implementation, this would trigger actual file download
+      window.open('#', '_blank');
+    }
   };
 
   const formatDate = (dateString: string) => {
