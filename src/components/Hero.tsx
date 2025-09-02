@@ -119,7 +119,7 @@ export const Hero = () => {
               <div className="text-sm">{t('hero.trustIndicators.exportCountries')}</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold">98%</div>
+              <div className="text-2xl font-bold">100%</div>
               <div className="text-sm">{t('hero.trustIndicators.customerSatisfaction')}</div>
             </div>
           </div>

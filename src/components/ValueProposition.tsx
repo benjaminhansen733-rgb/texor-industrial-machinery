@@ -96,7 +96,7 @@ export const ValueProposition = () => {
               <div className="text-sm md:text-base text-muted-foreground font-medium">{t('valueProposition.stats.countriesServed')}</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: "300ms" }}>
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">98%</div>
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">100%</div>
               <div className="text-sm md:text-base text-muted-foreground font-medium">{t('valueProposition.stats.customerSatisfaction')}</div>
             </div>
           </div>

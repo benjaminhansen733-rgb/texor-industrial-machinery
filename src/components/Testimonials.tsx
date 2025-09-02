@@ -94,7 +94,7 @@ export const Testimonials = () => {
             <div className="industrial-text">{t('testimonials.machinesDelivered')}</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">98%</div>
+            <div className="text-4xl font-bold text-primary mb-2">100%</div>
             <div className="industrial-text">{t('testimonials.customerSatisfaction')}</div>
           </div>
         </div>
