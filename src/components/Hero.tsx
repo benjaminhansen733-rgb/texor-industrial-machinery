@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/useLanguage";
 import { MessageCircle, Download, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-industrial-bg.jpg";
+import heroImage from "@/assets/hero-export-bg.webp";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -28,12 +28,13 @@ export const Hero = () => {
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          filter: 'blur(2px)'
         }}
       >
-        {/* Mild overlay to preserve machine details while maintaining blue theme */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/25 to-primary/45"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background/15 via-transparent to-transparent"></div>
+        {/* Professional dark blue overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/40 to-primary/55"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -44,15 +45,15 @@ export const Hero = () => {
             <span className="text-sm font-medium text-white/90">🏭 {t('hero.badge')}</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-gradient">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
             {t('hero.title')}
           </h1>
           
-          <p className="text-xl md:text-3xl mb-4 font-semibold text-white">
+          <p className="text-2xl md:text-4xl mb-4 font-semibold text-white drop-shadow-md">
             {t('hero.subtitle')}
           </p>
           
-          <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed text-white/90">
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed text-white/95 drop-shadow-sm">
             {t('hero.description')}
           </p>
 
