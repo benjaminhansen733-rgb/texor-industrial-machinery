@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/useLanguage";
 import { MessageCircle, Download, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-export-bg.webp";
+import heroImage from "@/assets/hero-new-bg.jpg";
 
 export const Hero = () => {
   const { t } = useLanguage();
